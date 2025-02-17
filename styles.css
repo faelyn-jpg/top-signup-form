@@ -1,0 +1,189 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/*
+Custom fonts
+*/
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('./fonts/SourceSansPro-Regular.woff2') format('woff2'),
+    url('./fonts/SourceSansPro-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('./fonts/BebasNeue-Regular.woff2') format('woff2'),
+    url('./fonts/BebasNeue-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Norse';
+  src: url('./fonts/Norse-Bold.woff2') format('woff2'),
+    url('./fonts/Norse-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+.main-container {
+  display: flex;
+  font-family: 'Source Sans Pro', 'Courier New', Courier, monospace;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar-background {
+  background: url('halie-west-25xggax4bSA-unsplash.jpg');
+  background-size: 540px 100vh;
+  height: 100vh;
+  width: 540px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.sidebar-logo-background {
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  font-family: 'Norse', sans-serif;
+  font-size: 120px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 180px;
+}
+.sidebar-logo-background img {
+  height: 150px;
+  display: block;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  background: rgb(247, 247, 247);
+  font-size: x-large;
+  max-width: 50%;
+  height: 100vh;
+  justify-content: center;
+}
+.hero {
+  padding-left: 40px;
+  padding-bottom: 60px;
+  width: 850px;
+}
+.space {
+  margin-top: 30px;
+}
+.form {
+  background: white;
+  box-shadow: 10px 5px 5px lightgray;
+  margin: 0 auto;
+}
+.form > h2 {
+  padding: 20px 0 20px 0;
+  align-content: center;
+}
+
+button {
+  background-color: #596d48;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 30px 5px 30px;
+}
+
+.format {
+  padding-left: 40px;
+  padding-bottom: 40px;
+}
+
+.submit {
+  padding-top: 30px;
+}
+
+label {
+  font-family: 'Bebas Neue', Verdana, Tahoma, sans-serif;
+  font-size: large;
+  color: darkgrey;
+  display: inline-block;
+}
+.input-container > p {
+  display: inline-block;
+  text-align: left;
+  width: 40%;
+}
+input {
+  font: 1em sans-serif;
+  width: 250px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+}
+
+p label {
+  width: 50%;
+}
