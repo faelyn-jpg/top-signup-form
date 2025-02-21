@@ -173,7 +173,7 @@ button {
 label {
   font-family: 'Bebas Neue', Verdana, Tahoma, sans-serif;
   font-size: large;
-  color: darkgrey;
+  color: rgb(73, 73, 73);
   display: inline-block;
 }
 .input-container > p {
@@ -185,9 +185,18 @@ input {
   font: 1em sans-serif;
   width: 250px;
   box-sizing: border-box;
-  border: 1px solid #999;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
 }
 
 p label {
   width: 50%;
+}
+
+input[type='password']:invalid {
+  border-color: rgb(218, 2, 2);
+}
+input:focus {
+  outline: 1px solid rgb(0, 0, 255);
+  box-shadow: 5px 5px 5px lightgray;
 }
